@@ -19,7 +19,7 @@ on:
       model:
         description: '选择机型'
         required: true
-        default: 'xiaomi-4a-gigabit' 
+        default: 'H3C-Tx1801-Plus' 
         type: choice
         options:
         - mi-router-4a-gigabit
@@ -27,7 +27,7 @@ on:
         - mi-router-ac2100
         - redmi-router-ac2100
         - mi-router-cr6606
-        - mi-router-cr6608
+        - H3C-Tx1801-Plus
         - mi-router-cr6609
         - mi-router-3g
         - mi-router-4
@@ -55,7 +55,7 @@ on:
       artifact:
         description: '上传到artifact'
         required: false
-        default: 'false'
+        default: 'true'
         type: boolean
 jobs:
   build_openwrt:
