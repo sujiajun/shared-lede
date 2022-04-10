@@ -18,11 +18,11 @@ zh_title=小米3Gv2 lede固件
 # end of 1-1 model firmware
 -----------------------------------------------------------------------------------------
 # start of 2 model firmware
-release_title=openwrt for xiaomi cr6608
-zh_title=小米CR6608 openwrt固件
-版本：lienol openwrt源码，master分支
-登陆IP 192.168.31.1，密码无
-应用：ipv6支持组件、argon主题、定时重启、nat6助手等。
+release_title=LEDE for H3C-Tx1801-Plus
+zh_title=H3C-Tx1801-Plus固件
+版本：lean lede源码
+登陆IP 192.168.31.1，密码password
+应用：ipv6支持组件、argon主题、定时重启、nat6助手、smartdns等。
 # end of 2 model firmware
 -----------------------------------------------------------------------------------------
 # start of 2-1 model firmware
