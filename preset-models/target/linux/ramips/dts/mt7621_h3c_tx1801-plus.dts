@@ -10,10 +10,10 @@
 	model = "H3C TX1801 Plus";
 
 	aliases {
-		led-boot = &led_sys_yellow;
-		led-failsafe = &led_sys_yellow;
-		led-running = &led_sys_blue;
-		led-upgrade = &led_sys_yellow;
+		led-boot = &led_sys_orange;
+		led-failsafe = &led_sys_orange;
+		led-running = &led_sys_green;
+		led-upgrade = &led_sys_orange;
 		label-mac-device = &gmac0;
 	};
 
@@ -24,25 +24,16 @@
 	leds {
 		compatible = "gpio-leds";
 
-		led_sys_yellow: sys_yellow {
-			label = "yellow:sys";
-			gpios = <&gpio 17 GPIO_ACTIVE_LOW>;
-		};
-
-		led_sys_blue: sys_blue {
-			label = "blue:sys";
+		led_sys_orange: sys_orange {
+			label = "orange:sys";
 			gpios = <&gpio 16 GPIO_ACTIVE_LOW>;
 		};
 
-		net_yellow {
-			label = "yellow:net";
-			gpios = <&gpio 18 GPIO_ACTIVE_LOW>;
-		};
-
-		net_blue {
-			label = "blue:net";
+		led_sys_green: sys_green {
+			label = "blue:green";
 			gpios = <&gpio 15 GPIO_ACTIVE_LOW>;
 		};
+
 	};
 
 	keys {
@@ -150,6 +141,11 @@
 			label = "lan3";
 		};
 
+		port@3 {
+			status = "okay";
+			label = "lan4";
+		};
+		
 		port@4 {
 			status = "okay";
 			label = "wan";
