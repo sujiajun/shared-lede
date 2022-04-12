@@ -9,7 +9,7 @@ sed -i 's/192.168.1.1/192.168.1.1/g' package/base-files/files/bin/config_generat
 #rm -rf package/feeds/packages/xray-core
 # 修改默认wifi名称ssid为H3C-Tx1801-Plus
 sed -i 's/ssid=OpenWrt/ssid=H3C-Tx1801-Plus/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
-#配置ipv6、主题
+#配置smartdns、ipv6、主题、vssr
 sed -i '/exit 0/d' package/lean/default-settings/files/zzz-default-settings
 cat default-settings/config_smartdns >> package/lean/default-settings/files/zzz-default-settings
 cat default-settings/config_ipv6 >> package/lean/default-settings/files/zzz-default-settings
