@@ -3,6 +3,7 @@
 git clone https://github.com/coolsnowwolf/lede.git
 mv ./lede/* ./
 
+sed -i '$a src-git kenzo https://github.com/kenzok8/small-package' feeds.conf.default
 # 下载自定义插件
 rm -rf package/lean/luci-theme-argon
 cd package
