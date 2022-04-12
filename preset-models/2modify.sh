@@ -38,4 +38,4 @@ sed -i 's/disabled=1/disabled=0/g' package/kernel/mac80211/files/lib/wifi/mac802
 #切换ramips内核到5.4
 sed -i '/KERNEL_PATCHVER/cKERNEL_PATCHVER:=5.4' target/linux/ramips/Makefile
 
-git clone https://github.com/destan19/OpenAppFilter.git
+sed -i '$a src-git destan https://github.com/destan19/OpenAppFilter' feeds.conf.default
