@@ -21,7 +21,7 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/M
 sed -i '/exit 0/d' package/lean/default-settings/files/zzz-default-settings
 cat default-settings/config_smartdns >> package/lean/default-settings/files/zzz-default-settings
 cat default-settings/config_ipv6 >> package/lean/default-settings/files/zzz-default-settings
-
+cat default-settings/config_theme >> package/lean/default-settings/files/zzz-default-settings
 cat default-settings/config_vssr >> package/lean/default-settings/files/zzz-default-settings
 echo "exit 0" >> package/lean/default-settings/files/zzz-default-settings
 
