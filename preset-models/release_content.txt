@@ -2,14 +2,14 @@
 # It will be showed in the releases.
 -----------------------------------------------------------------------------------------
 # 1 model firmware
-release_title=MY LEDE for H3C-TX1801-Plus
-zh_title=MY LEDE for H3C-TX1801-Plus
+release_title=MY LEDE for H3C-TX1801-PLUS
+zh_title=MY LEDE for H3C-TX1801-PLUS
 key_info=版本：lean lede源码<br/>登陆IP 192.168.1.1，密码password
 # end of 1 model firmware
 -----------------------------------------------------------------------------------------
 # 2 model firmware
-release_title=LEDE for H3C-TX1801-Plus
-zh_title=H3C-TX1801-Plus固件
+release_title=LEDE for H3C-TX1801-PLUS
+zh_title=H3C-TX1801-PLUS固件
 key_info=版本：lean lede源码<br/>登陆IP 192.168.1.1，密码password
 # end of 2 model firmware
 -----------------------------------------------------------------------------------------
