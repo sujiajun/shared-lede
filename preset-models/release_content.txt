@@ -23,7 +23,7 @@ zh_title=h3c-tx1801-plus lede固件
 版本：lean lede源码
 登陆IP 192.168.1.1，密码password
 应用：ipv6支持组件、argon主题、定时重启、nat6助手、smartdns等。
-# end of 1-1 model firmware
+# end of 2 model firmware
 -----------------------------------------------------------------------------------------
 # start of 2-1 model firmware
 release_title=openwrt for xiaomi cr6606
