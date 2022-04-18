@@ -2,11 +2,11 @@
 # It will be showed in the release.
 -----------------------------------------------------------------------------------------
 # start of 1 model firmware
-release_title=lede for xiaomi 4a gigabit
-zh_title=小米4A千兆版lede固件
-版本：lean lede源码
-登陆IP 192.168.31.1，密码password
-应用：ipv6支持组件、argon主题、定时重启、nat6助手、smartdns等。
+release_title=lienol for h3c-tx1801-plus
+zh_title=h3c-tx1801-plus lienol固件
+版本：lienol openwrt源码，master分支
+登陆IP 192.168.1.1，密码无
+应用：ipv6支持组件、argon主题、定时重启、nat6助手等。
 # end of 1 model firmware
 -----------------------------------------------------------------------------------------
 # start of 1-1 model firmware
