@@ -14,3 +14,4 @@ git clone https://github.com/Ausaci/luci-app-nat6-helper.git
 git clone -b packages --single-branch https://github.com/xiaorouji/openwrt-passwall.git
 git clone https://github.com/ntlf9t/luci-app-easymesh.git
 git clone https://github.com/destan19/OpenAppFilter.git
+git clone https://github.com/sirpdboy/netspeedtest.git
