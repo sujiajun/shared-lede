@@ -1,6 +1,6 @@
 #!/bin/sh
 #修改登录IP
-sed -i 's/192.168.1.1/192.168.1.1/g' package/base-files/files/bin/config_generate
+#sed -i 's/192.168.1.1/192.168.1.1/g' package/base-files/files/bin/config_generate
 #修改主机名
 sed -i 's/OpenWrt/H3C-Tx1801-Plus/g' package/base-files/files/bin/config_generate
 \cp -rf preset-models/target/linux target
@@ -31,5 +31,5 @@ sed -i "s/OpenWrt /KingKong build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" pac
 sed -i 's/disabled=1/disabled=0/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 #切换ramips内核到5.10
-sed -i '/KERNEL_PATCHVER/cKERNEL_PATCHVER:=5.4' target/linux/ramips/Makefile
+sed -i '/KERNEL_PATCHVER/cKERNEL_PATCHVER:=5.10' target/linux/ramips/Makefile
 
