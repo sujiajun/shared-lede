@@ -20,7 +20,4 @@ cp -f uci-scripts/* files/etc/uci-defaults
 #切换ramips内核到5.15
 #sed -i '/KERNEL_PATCHVER/cKERNEL_PATCHVER:=5.15' target/linux/ramips/Makefile
 
-#删除一些zzz中的脚本
-sed -i '/DISTRIB_/d' package/default-settings/files/zzz-default-settings
-sed -i '/footer.htm/d' package/default-settings/files/zzz-default-settings
-sed -i '/admin_status/d' package/default-settings/files/zzz-default-settings
+
