@@ -5,8 +5,8 @@
 sed -i 's/OpenWrt/H3C-Tx1801-Plus/g' package/base-files/files/bin/config_generate
 \cp -rf preset-models/target1/linux target
 #删除自带低版本xray-core
-#rm -rf feeds/packages/net/xray-core
-#rm -rf package/feeds/packages/xray-core
+rm -rf feeds/packages/net/xray-core
+rm -rf package/feeds/packages/xray-core
 # 修改默认wifi名称ssid为H3C-Tx1801-Plus
 sed -i 's/ssid=OpenWrt/ssid=H3C-Tx1801-Plus/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 修改 argon 为默认主题,可根据你喜欢的修改成其他的（不选择那些会自动改变为默认主题的主题才有效果）
@@ -32,3 +32,8 @@ sed -i 's/disabled=1/disabled=0/g' package/kernel/mac80211/files/lib/wifi/mac802
 
 #切换ramips内核到5.10
 #sed -i '/KERNEL_PATCHVER/cKERNEL_PATCHVER:=5.10' target/linux/ramips/Makefile
+
+#删除一些zzz中的脚本
+sed -i '/DISTRIB_/d' package/default-settings/files/zzz-default-settings
+sed -i '/footer.htm/d' package/default-settings/files/zzz-default-settings
+sed -i '/admin_status/d' package/default-settings/files/zzz-default-settings
