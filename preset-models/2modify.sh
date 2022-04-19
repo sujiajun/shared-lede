@@ -10,8 +10,10 @@ sed -i 's/OpenWrt/H3C-Tx1801-Plus/g' package/base-files/files/bin/config_generat
 # 修改默认wifi名称ssid为H3C-Tx1801-Plus
 sed -i 's/ssid=OpenWrt/ssid=H3C-Tx1801-Plus/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
-修改 argon 为默认主题,可根据你喜欢的修改成其他的（不选择那些会自动改变为默认主题的主题才有效果）
+#修改 argon 为默认主题,可根据你喜欢的修改成其他的（不选择那些会自动改变为默认主题的主题才有效果）
 #sed -i "/commit luci/i\uci set luci.main.mediaurlbase='/luci-static/argon'" package/lean/default-settings/files/zzz-default-settings
+#取消bootstrap为默认主题
+#sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
 #配置ipv6、主题
 #sed -i '/exit 0/d' package/lean/default-settings/files/zzz-default-settings
 #cat default-settings/config_smartdns >> package/lean/default-settings/files/zzz-default-settings
